@@ -1,0 +1,32 @@
+ <!-- To link that is inherit from parent type jextend  -->
+ {% extends 'base.html' %} 
+ <!-- To add title with each page use jblock and give blockname and connect to different html files -->
+ {% block title %}
+ Update
+ {% endblock title  %}
+ <!-- joins the body to main bas file  -->
+ {% block body  %}
+
+ 
+  <!-- form down -->
+  <div class="container">
+    
+ <div class="p-3 mb-2 bg-warning text-dark">Welcome To Update Your Todo . Start Updating Right Here .</div>
+    <h2>Update a Todo</h2>
+    <form action="/update/{{todo.sno}}" method="POST">
+      <div class="mb-3">
+        <label for="title" class="form-label">Todo Title</label>
+        <input type="text" class="form-control" name="title" id="title" value="{{todo.title}}" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="desc" class="form-label">Todo Description</label>
+        <input type="text" class="form-control" name="desc" id="desc" value="{{todo.desc}}">
+      </div>
+
+      <button type="submit" class="btn btn-outline-dark">Submit</button>
+    </form>
+  </div>
+  <!-- form up -->
+
+ 
+    {% endblock body %}
