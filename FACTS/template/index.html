@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SBVS FACTS</title>
+    
+</head>
+<style>
+    *{margin: 0;
+      padding: 0;}
+body
+{ 
+background-image: url("https://images6.alphacoders.com/121/1217194.png"); 
+background-size: cover; 
+background-position: center center; 
+background-repeat: no-repeat;
+ background-attachment: fixed
+
+}
+#box{
+    /* border: 2px solid red; */
+    width: 50%;
+    text-align: center;
+    font-size: x-large;
+    margin: 40px auto;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    color: white;
+}
+</style>
+<body>
+   
+    <div id="box" >
+     <!-- Here Comes innerHTML -->
+    </div>
+    <!-- Always mention js script tag at last or it will fail to read our above html resulting in errors -->
+    
+    <!-- BELOW IS THE CORRECT SYNTAX TO USE JS IN FLASK HTML  -->
+    <script src="{{ url_for('static', filename='js/main_scripts.js') }}"></script>
+</body>
+</html>
