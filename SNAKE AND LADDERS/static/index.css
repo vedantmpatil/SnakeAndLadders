@@ -1,0 +1,110 @@
+#submitBtn{
+    max-width: 70px;
+}
+#rollBtn{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px; 
+  font-size: xx-large;
+}
+
+
+#inputContainer{
+    border: 2px solid rgb(52, 52, 52);
+    padding: 1rem;
+    width: 20rem;
+    margin: 1rem auto;
+}
+#noOfPlayers{
+    width: 6rem;
+}
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+#submitPlayersBtn {
+    display: none; /* Initially hide the "Submit Players" button */
+  }
+
+  .image-container {
+    max-width: 100%;
+    height: auto;
+    margin: 2rem 2rem 2rem 2rem;
+  }
+
+  .cont {
+    display: grid;
+    width: 600px;
+    grid-template-columns: repeat(10, 1fr);
+    margin: 0px 0 0px 80px;
+  }
+  
+  .cont div {
+    width: 60px;
+    height: 60px;
+    border: 0.2px solid black;
+  }
+
+  #p1,
+#p2 {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rgb(236, 82, 82);
+  position: relative;
+  border: 3px solid black;
+
+  /* position: absolute; */
+}
+
+#p1 {
+  position: relative;
+  top: 0px;
+  transition: all linear 0.5s;
+  /* top: 0; */
+  left: -62px;
+  z-index: 2;
+}
+
+#p2 {
+  z-index: 2;
+  position: relative;
+  top: -55px;
+  left: -62px;
+  transition: all linear 0.5s;
+  background-color: rgb(243, 181, 46);
+}
+
+.player-circle1 , .player-circle2{
+  width: 36px;
+  height: 36px;
+  border-radius: 100px;
+  background-color: rgb(0, 42, 255);
+  /* position: relative; */
+  border: 3px solid black;
+  margin: -25px 0px 0px  0px;
+}
+
+.player-circle1{
+  /* position: relative; */
+  top: 0px;
+  transition: all linear 0.5s;
+  /* top: 0; */
+  left: -62px;
+  z-index: 2;
+  margin: 0 0 0 0;
+}
+
+.player-circle2{
+  z-index: 2;
+  /* position: relative; */
+  top: -55px;
+  left: -62px;
+  transition: all linear 0.5s;
+  background-color: rgb(201, 0, 0);
+  margin: 0 0 0 0;
+
+}
